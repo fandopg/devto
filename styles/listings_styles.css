@@ -1,5 +1,5 @@
 body, html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     margin: 0;
     display: flex;
@@ -132,20 +132,38 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-.side_nav div:hover {
+
+.search_list input {
+    width: 100%;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    background-color: white;
+    width: 80%;
+    padding: 12px;
+    margin-left: 10px;
+}
+.search_list input:focus {
+    outline-color: rgb(52, 116, 236);
+}
+.title {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+}
+.side_nav div:hover:not(.title) {
     border-radius: 5px;
     background-color: rgb(181, 193, 233);
     color: rgb(59, 99, 185);
 }
 
 
-.side_nav div {
-    height: 38px;
+.side_nav div span {
+    height: max-content;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 span {
     margin-left: 10px;
@@ -181,7 +199,7 @@ button:hover {
     padding: 10px;
     background-color: #fafafa;
     border-radius: 10px;
-    margin: 20px 10px;
+    margin: 0px 10px 20px 10px;
 }
 .creator {
     display: flex;
